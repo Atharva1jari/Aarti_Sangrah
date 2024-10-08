@@ -62,3 +62,18 @@ color: white;
 display: flex;
 justify-content: space-around;
 }
+.aarti-btn
+{
+    border: solid 3px  rgb(223, 110, 5); 
+    color: azure; 
+    background-color: 
+    rgb(223, 110, 5);
+     padding: 10px; 
+     border-radius: 20px; 
+    margin-left: 70px;
+ }
+ .aarti-btn:hover
+ {
+    background-color:orangered;
+    border: solid 3px orangered;
+ }
