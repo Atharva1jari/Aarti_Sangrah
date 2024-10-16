@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+{
+    background-color: rgba(76, 143, 143, 0.453);
+text-align: center;
+margin-top: 200px;
+}
+
+
+.idpass
+
+    {
+        width: 300px;
+        height:35px;
+        border: 1px black solid;
+    }
+</style>
+
+<body>
+    <h1>Login Page</h1>
+    <input type = text id="username" name="username" class="idpass" placeholder = "User ID">
+    
+    </br></br>
+    <input type = text id="password" name="password" class="idpass" placeholder = "Password">
+    <br></br>
+    <button onclick="login()">Submit</button>
+    <button>reset</button>
+
+
+    <div id ="login">
+
+    </div>
+    
+</body>
+<script>
+    function login(){
+
+   
+        const validUsername = 'username';
+        const validPassword = 'password';
+
+
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const login = document.getElementById('login').value;
+
+
+
+        console.log(username);
+        console.log(password);
+    
+     
+        if (username == validUsername && password == validPassword) {
+            console.log("login")
+            alert('Login successful!');
+            login.innerHTML=('login')
+        } else {
+            alert("not login")
+        }
+    }
+</script>
+</html>
